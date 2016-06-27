@@ -32,12 +32,9 @@ using System.Threading.Tasks;
 
 namespace SFDC.Canvas
 {
-    public class Context
+    public class SystemVersion
     {
-        public OrganizationContext organization { get; set; }
-        public EnvironmentContext environment { get; set; }
-        public LinkContext links { get; set; }
-        public UserContext user { get; set; }
-        public ApplicationContext application { get; set; }
+        public string season { get; set; }
+        public string api { get; set; }
     }
 }

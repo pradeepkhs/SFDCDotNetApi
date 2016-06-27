@@ -32,12 +32,38 @@ using System.Threading.Tasks;
 
 namespace SFDC.Canvas
 {
-    public class Context
+    public class EnvironmentContext
     {
-        public OrganizationContext organization { get; set; }
-        public EnvironmentContext environment { get; set; }
-        public LinkContext links { get; set; }
-        public UserContext user { get; set; }
-        public ApplicationContext application { get; set; }
+        public string locationUrl { get; set; }
+        public string uiTheme { get; set; }
+        public Dimensions dimensions { get; set; }
+        public SystemVersion version { get; set; }
+        public Object displayLocation { get; set; }
+
+        private Dictionary<string, Object> param;
+
+        public Dictionary<string, Object> Parameters
+        {
+            get
+            {
+                if (null == this.param)
+                {
+                    this.param = new Dictionary<String, Object>();
+                }
+                return this.param;
+            }
+            set
+            {
+                this.param = value;
+            }
+        }
+
+        public override string ToString()
+        {
+            return locationUrl + ", " +
+               uiTheme + "," +
+               dimensions.ToString() + "," +
+               version.ToString();
+        }
     }
 }

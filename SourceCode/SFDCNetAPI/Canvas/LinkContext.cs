@@ -32,12 +32,21 @@ using System.Threading.Tasks;
 
 namespace SFDC.Canvas
 {
-    public class Context
+    public class LinkContext
     {
-        public OrganizationContext organization { get; set; }
-        public EnvironmentContext environment { get; set; }
-        public LinkContext links { get; set; }
-        public UserContext user { get; set; }
-        public ApplicationContext application { get; set; }
+        public string enterpriseUrl { get; set; }
+        public string metadataUrl { get; set; }
+        public string partnerUrl { get; set; }
+        public string restUrl { get; set; }
+        public string sobjectUrl { get; set; }
+        public string searchUrl { get; set; }
+        public string queryUrl { get; set; }
+        public string recentItemsUrl { get; set; }
+        public string userProfileUrl { get; set; }
+        public string chatterFeedsUrl { get; set; }
+        public string chatterGroupsUrl { get; set; }
+        public string chatterUsersUrl { get; set; }
+        public string chatterFeedItemsUrl { get; set; }
+        public string loginUrl { get; set; }
     }
 }

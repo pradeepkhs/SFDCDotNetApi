@@ -23,6 +23,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +32,7 @@ using System.Threading.Tasks;
 
 namespace SFDC.Canvas
 {
-    class UserContext
+    public class UserContext
     {
         public string UserId { get; set; }
         public string FirstName { get; set; }
@@ -52,6 +53,5 @@ namespace SFDC.Canvas
         public object networkId { get; set; }
         public object siteUrl { get; set; }
         public object siteUrlPrefix { get; set; }
-
     }
 }

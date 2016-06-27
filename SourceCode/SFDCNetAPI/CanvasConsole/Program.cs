@@ -11,6 +11,7 @@ namespace CanvasConsole
     {
         static void Main(string[] args)
         {
+            Context obj = new Context();
         }
     }
 }

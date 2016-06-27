@@ -32,12 +32,13 @@ using System.Threading.Tasks;
 
 namespace SFDC.Canvas
 {
-    public class Context
+    public class Dimensions
     {
-        public OrganizationContext organization { get; set; }
-        public EnvironmentContext environment { get; set; }
-        public LinkContext links { get; set; }
-        public UserContext user { get; set; }
-        public ApplicationContext application { get; set; }
+        public string width { get; set; }
+        public string maxHeight { get; set; }
+        public string maxWidth { get; set; }
+        public string height { get; set; }
+        public string clientWidth { get; set; }
+        public string clientHeight { get; set; }
     }
 }

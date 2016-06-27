@@ -24,6 +24,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+ // Canvas Request object
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,12 +33,12 @@ using System.Threading.Tasks;
 
 namespace SFDC.Canvas
 {
-    public class Context
+    public class RootObject
     {
-        public OrganizationContext organization { get; set; }
-        public EnvironmentContext environment { get; set; }
-        public LinkContext links { get; set; }
-        public UserContext user { get; set; }
-        public ApplicationContext application { get; set; }
+        public Context context { get; set; }
+        public Client client { get; set; }
+        public string userId { get; set; }
+        public int issuedAt { get; set; }
+        public string algorithm { get; set; }
     }
 }

@@ -32,12 +32,11 @@ using System.Threading.Tasks;
 
 namespace SFDC.Canvas
 {
-    public class Context
+    public class Client
     {
-        public OrganizationContext organization { get; set; }
-        public EnvironmentContext environment { get; set; }
-        public LinkContext links { get; set; }
-        public UserContext user { get; set; }
-        public ApplicationContext application { get; set; }
+        public string instanceId { get; set; }
+        public string targetOrigin { get; set; }
+        public string instanceUrl { get; set; }
+        public string oauthToken { get; set; }
     }
 }
